@@ -31,7 +31,7 @@ nav {
     margin-top: 10px;
     }
 
-    a {
+nav > a {
         display: inline-block;
         margin-left: 2em;
         color: #000;
@@ -40,11 +40,11 @@ nav {
         text-decoration: none;
     }
 
-nav > a: :first-child {
+nav > a:first-child {
     margin-left: 0;
 }
 
-a:hover {
+nav > a:hover {
     text-decoration: underline;
 }
 
@@ -73,14 +73,30 @@ p {
 }
 
 div > a {
-background-color: red;
+    float: left;
+    padding: 0.9em;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+background-color: #5E3287;
+color: #fff;
+font-size: 16px;
+line-height: 1.3em;
+text-transform: uppercase;
+text-decoration: none;
+border-radius: 1.7em;
+border: 0.15em solid #5E3287;
 }
 
 div > a:last-child {
-background-color: blue;
+    background-color: #fff;
+    color: #5E3287;
 }
-
-
+/* div > a:hover { */
+div > a {
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
 main > img {
     width: 55%;
     float: right;
