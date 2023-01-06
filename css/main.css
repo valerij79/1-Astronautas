@@ -60,6 +60,27 @@ float: left;
     display: block;
     font-weight: bold;
 }
+.main-title::before {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 6px;
+    background-color: #662c8c;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+
+.item {
+    font-size: 20px;
+}
+.item::before {
+    content: '✅';
+    margin-right: 10px;
+}
+.item::after {
+    content: ';';
+}
 
 .description {
     font-size: 20px;
@@ -72,14 +93,14 @@ float: left;
     padding-right: 2em;
     margin-right: 1em;
     margin-bottom: 1em;
-background-color: #5E3287;
-color: #fff;
-font-size: 16px;
-line-height: 1.3em;
-text-transform: uppercase;
-text-decoration: none;
-border-radius: 1.7em;
-border: 0.15em solid #5E3287;
+    background-color: #5E3287;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.3em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 1.7em;
+    border: 0.15em solid #5E3287;
 }
 .button:last-child {
     background-color: #fff;
